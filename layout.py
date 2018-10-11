@@ -5,8 +5,10 @@
 # Created by: PyQt5 UI code generator 5.5.1
 #
 # WARNING! All changes made in this file will be lost!
+#pyuic5 -x main.ui -o layout.py
 
 from PyQt5 import QtCore, QtGui, QtWidgets
+import functions
 
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
@@ -39,6 +41,7 @@ class Ui_MainWindow(object):
         self.pushButton_2 = QtWidgets.QPushButton(self.centralwidget)
         self.pushButton_2.setGeometry(QtCore.QRect(80, 110, 99, 27))
         self.pushButton_2.setObjectName("pushButton_2")
+        self.pushButton_2.clicked.connect(self.onclickExtract)
         MainWindow.setCentralWidget(self.centralwidget)
         self.menubar = QtWidgets.QMenuBar(MainWindow)
         self.menubar.setGeometry(QtCore.QRect(0, 0, 611, 25))

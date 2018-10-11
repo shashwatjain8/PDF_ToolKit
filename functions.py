@@ -1,0 +1,3 @@
+def onclickExtract():
+
+	return True
