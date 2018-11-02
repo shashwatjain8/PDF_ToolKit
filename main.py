@@ -3,6 +3,8 @@ import Tkconstants, tkFileDialog
 
 master = Tk()
 
+def pdfConv():
+	pass
 def loadFile():
     filename = tkFileDialog.askopenfilename(initialdir = "/",title = "Select file",filetypes = (("PDF Files","*.pdf"),("all files","*.*")))
     l1['text'] = filename
